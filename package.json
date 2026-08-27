@@ -1,0 +1,14 @@
+{
+  "name": "industrial-air-emissions-continuous-monitoring-calibration-assurance-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "check": "node --check src/app.mjs && node --check src/domain.mjs && node --check src/errors.mjs && node --check src/policy.mjs && node --check src/server.mjs && node --check src/store.mjs && node --check src/validation.mjs",
+    "test": "vitest run"
+  },
+  "dependencies": { "express": "5.1.0" },
+  "devDependencies": { "supertest": "7.1.1", "vitest": "3.2.4" }
+}
